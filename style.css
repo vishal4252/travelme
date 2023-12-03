@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* 
+body {
+    overflow: hidden;
+} */
+
+.about-sec {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FDF6EA;
+    overflow: hidden;
+}
+
+.about-sec .left-sec {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.about-sec .left-sec h1 {
+    font-size: 50px;
+}
+
+.about-sec .left-sec p {
+    font-size: 20px;
+}
+
+.about-sec .right-sec {
+    display: flex;
+    justify-content: end;
+    flex-basis: 50%;
+}
+
+.about-sec .right-sec img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-sec button {
+    padding: 12px 45px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: #FF8C00;
+    font-weight: 500;
+}
+
+.deals {
+    width: 100%;
+    text-align: center;
+    background-color: #504128;
+}
+
+.deals h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.deals .deals-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.deals .deals-items .deals-card {
+    background-color: #FDF6EA;
+    margin-bottom: 100px;
+}
+
+.deals .deals-items .deals-card ul li {
+    text-align: left;
+}
+
+.deals .deals-items .deals-card ul li:nth-child(1) {
+    margin-top: 30px;
+}
+
+.deals .deals-items .deals-card button {
+    padding: 12px 45px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: #FF8C00;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #FDF6EA;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .left-footer {
+    flex-basis: 60%;
+}
+
+@media(max-width:768px) {
+    .about-sec {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .about-sec .left-sec {
+        flex-basis: 100%;
+    }
+
+    .about-sec .left-sec h1 {
+        font-size: 35px;
+    }
+
+    .about-sec .left-sec p {
+        font-size: 15px;
+    }
+
+    .about-sec .right-sec {
+        justify-content: center;
+        flex-basis: 100%;
+    }
+
+    .about-sec .right-sec img {
+        width: 370px;
+        height: 300px;
+    }
+
+    .deals h1 {
+        font-size: 35px;
+        color: #fff;
+    }
+
+    .deals .deals-items .deals-card {
+        margin-bottom: 10px;
+    }
+
+    footer .left-footer {
+        flex-basis: 100%;
+    }
+
+}
